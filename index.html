@@ -56,7 +56,10 @@
             bottom: 0;
             margin: auto;
             justify-content: center;
-            .pad{
+            
+            
+        }
+        .pad{
                 height: 320px;
                 width: 270px;
                 justify-content: center;
@@ -74,12 +77,13 @@
                     border: none;
                     background-color: #fff;
                     box-shadow: 1rem 1rem 1.6rem 50px #d1d9e6, -o.6rem -0.6rem 1.6rem 50px #fff; 
+                    filter: drop-shadow(0.3rem 0.2rem 0.5rem #d1d9e6);
+                    &:active{
+                        box-shadow: 0.5rem 0.5rem 0.8rem 50px #d1d9e6, -o.3rem -0.3rem 0.8rem 50px #fff; 
+                        filter: drop-shadow(0.1rem 0.1rem 0.2rem #d1d9e6);
+                    }
 
-
-
-                }
-            }
-        }
+                }}
         .display{
             position: relative;
             height: 60px;
@@ -127,5 +131,6 @@
 
 
     </div>
+    <script src="calculator.js"></script>
 </body>
 </html>
